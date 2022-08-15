@@ -5,14 +5,12 @@
 *This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org)*
 
 <h1 align = "center"> Drug Price Panel </h1>
-<p align = "center"> <img src = "https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png" /> </p>
+<p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/panel-de-precios.png" /> </p>
 
 ## Table of Contents:
 ---
 - [Description and context](#description-and-context)
-- [User's Guide](#users-guide)
 - [Installation guide](#installation-guide)
-- [How to contribute](#how-to-contribute)
 - [Author/s](#authors)
 - [License](#license)
 - [Limitation of responsibilities](#limitation-of-responsibilities)
@@ -30,10 +28,6 @@ The intended readers of this document are the system analyst & designer, project
 - Programmers who are interested in working on the project by further developing it or for maintaining the platform.
 - For Users who want to setup.
 
-## User's Guide
----
-
-
 ## Installation guide
 ---
 How to set up the server
@@ -46,30 +40,38 @@ How to set up the server
 - copy .env.dev to .env and change the DB\_XXX environment variable to your local postgresql server info
 - run command:
 
+```
 composer.phar install
+```
 
 - To init database, run command at folders database/migrations and database/seeds:
-
+```
 migrate:fresh –db.
-
+```
 - access the page for toolkit: https://github.com/EL-BID/Panel-de-precios-medicamentos
 
 
 **Steps to deployment**
 
 Install the  **R-base package**  using the following code
-
+```
 sudo apt-get update
-
+```
+```
 sudo apt-get install r-base
+```
 
 Download and install the  **gdebi**  package using the following commands
 
+```
 sudo apt install gdebi
+```
 
 Use the following commands to install the .deb package
 
+```
 sudo gdebi /path/to/the/file/.deb
+```
 
 Updated R studio
 
@@ -80,11 +82,15 @@ Updated Sql version
 - install
 - clone project from [b](https://github.com/orite-dev/kepp-v2-web)https://github.com/EL-BID/Panel-de-precios-medicamentos
 - copy .env.development to .env
-- Run the following commands in the project root folder:
 
+Run the following commands in the project root folder:
+
+```
 yarn install
-
+```
+```
 yarn start
+```
 
 \*NOTE: the project is based on .R execution resources required.
 
@@ -92,13 +98,15 @@ yarn start
 
 - copy .env.production to .env
 - Run the following commands:
-
+```
 yarn install
-
+```
+```
 yarn build
-
+```
+```
 yarn deploy
-
+```
 **Clone and Install**
 
 Clone the repo:
@@ -109,9 +117,14 @@ Move to the appropriate directory:
 
 Install dependencies:
 
+```
 npm install
+```
 
-### Dependencies
+## Software Interfaces
+
+<p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/soft-inter.png" /> </p>
+<p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/package-inter.png" /> </p>
 
 ## Hardware Interfaces
 
@@ -139,11 +152,6 @@ npm install
 ## Author/s
 ---
 Eduardo Yonekura
-
-## License
----
-
-If the tool you are publishing with the Code for Development initiative has been financed by the IDB, we invite you to review the [bank's official license to publish software] (https://github.com/EL-BID/Plantilla-de-repositorio/blob/master/LICENSE.md)
 
 ## Limitation of responsibilities
 Disclaimer: This section is only for IDB-funded tools.
