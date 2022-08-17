@@ -20,7 +20,7 @@
 Este aplicativo apresenta informações sobre os preços de referência de medicamentos e outros produtos, com base nos dados da Nota Fiscal Eletrônica.
 Ferramenta desenvolvida em linguagem R e com o apoio de algoritmos de Text Mining e Data Mining. O objetivo é melhorá-lo com o desenvolvimento de novos algoritmos e, possivelmente, com o uso da linguagem Python e suas bibliotecas.
 
-Os leitores pretendidos deste documento são o analista e designer do sistema, o desenvolvedor do projeto, o desenvolvedor, o painel do projeto e os proprietários do sistema. O analista e projetista de sistemas pode usar este documento como referência cruzada para verificar seu trabalho futuro. Desenvolvedores de projetos podem usar este documento para rastreabilidade das funções implementadas. O painel do projeto pode usar este documento para verificar a quantidade e a qualidade do produto final, finalmente, este documento pode ajudar a preencher as lacunas entre as partes interessadas do projeto, ou seja, analistas, designers, desenvolvedores, usuários do sistema e proprietários do sistema para ajudá-los a entender quais funcionalidades esta plataforma terá e o que não
+Os leitores pretendidos deste documento são o analista e designer do sistema, o gerente do projeto, o desenvolvedor, o painel do projeto e os proprietários do sistema. O analista de sistemas e designer podem usar este documento como referência cruzada para verificar seu trabalho futuro. Gerentes de projetos podem usar este documento para rastreabilidade das funções implementadas. O painel do projeto pode usar este documento para verificar a quantidade e a qualidade do produto final. Este documento pode ajudar a preencher as lacunas entre as partes interessadas do projeto, ou seja, analistas, designers, desenvolvedores, usuários do sistema e os proprietários do sistema para ajudá-los a entender quais funcionalidades esta plataforma terá e quais não terá:
 
 - Usuários avançados/profissionais, como engenheiros (desenvolvedores) ou pesquisadores, que desejam usar para análises gráficas mais exigentes.
 - Consultores de Desenvolvimento – Profissionais experientes no mercado de desenvolvimento de aplicativos e web. Este documento pode ser usado para revisar os componentes da plataforma e possíveis alterações são necessárias ou para fornecer uma visão geral da experiência do usuário.
@@ -157,7 +157,7 @@ Isenção de responsabilidade: Esta seção é apenas para ferramentas financiad
 
 O BID não será responsável, em hipótese alguma, por danos ou indenizações, morais ou patrimoniais; direto ou indireto; acessório ou especial; ou por consequência, prevista ou imprevista, que possa surgir:
 
-eu. Sob qualquer teoria de responsabilidade, seja por contrato, violação de direitos de propriedade intelectual, negligência ou sob qualquer outra teoria; Eu
+i. Sob qualquer teoria de responsabilidade, seja por contrato, violação de direitos de propriedade intelectual, negligência ou sob qualquer outra teoria; Eu
 
 ii. Como resultado do uso da Ferramenta Digital, incluindo, mas não se limitando a, possíveis defeitos na Ferramenta Digital, ou a perda ou imprecisão de dados de qualquer tipo. O anterior inclui despesas ou danos associados a falhas de comunicação e/ou mau funcionamento do computador, relacionadas ao uso da Ferramenta Digital.
 
