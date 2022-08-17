@@ -2,58 +2,57 @@
 ![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/panel-de-precios/readme&dt=&tid=UA-4677001-16)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Panel-de-precios-medicamentos&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_Panel-de-precios-medicamentos)
 
-*This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org)*
+*Esta ferramenta digital faz parte do catálogo de ferramentas do **Banco Interamericano de Desenvolvimento**. Você pode saber mais sobre a iniciativa do BID em [code.iadb.org](https://code.iadb.org)*
 
-<h1 align = "center"> Drug Price Panel </h1>
-<p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/panel-de-precios.png" /> </p>
+<h1 align = "center"> Painel de preços de medicamentos </h1>
+<p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/panel-de-precios.png" /> </p >
 
-## Table of Contents:
+## Índice:
 ---
-- [Description and context](#description-and-context)
-- [Installation guide](#installation-guide)
-- [Author/s](#authors)
-- [License](#license)
-- [Limitation of responsibilities](#limitation-of-responsibilities)
+- [Descrição e contexto](#description-and-context)
+- [Guia de instalação](#installation-guide)
+- [Autor/es](#autores)
+- [Licença](#licença)
+- [Limitação de responsabilidades](#limitação-de-responsabilidades)
 
-## Description and context
+## Descrição e contexto
 ---
-This application presents information on the reference prices of medicines and other products, based on the data from the Electronic Fiscal Note.
-Tool developed using the R language and with the support of Text and Data Mining algorithms. The objective is to improve it with the development of new algorithms and, possibly, with the use of the Python language and its libraries.
+Este aplicativo apresenta informações sobre os preços de referência de medicamentos e outros produtos, com base nos dados da Nota Fiscal Eletrônica.
+Ferramenta desenvolvida em linguagem R e com o apoio de algoritmos de Text Mining e Data Mining. O objetivo é melhorá-lo com o desenvolvimento de novos algoritmos e, possivelmente, com o uso da linguagem Python e suas bibliotecas.
 
-The intended readers of this document are the system analyst & designer, project developer, developer, project panel, and system owners. The system analyst & designer can use this document for his cross reference to verify his future work. Project developers can use this document for traceability of the functions implemented. Project panel can use this document to verify the quantity and quality of the end product, finally this document can help bridge-up the gaps between the project stakeholders i.e. analysts, designers, developers, system users and the system owners to help them understand what functionalities this platform will have and what not
+Os leitores pretendidos deste documento são o analista e designer do sistema, o desenvolvedor do projeto, o desenvolvedor, o painel do projeto e os proprietários do sistema. O analista e projetista de sistemas pode usar este documento como referência cruzada para verificar seu trabalho futuro. Desenvolvedores de projetos podem usar este documento para rastreabilidade das funções implementadas. O painel do projeto pode usar este documento para verificar a quantidade e a qualidade do produto final, finalmente, este documento pode ajudar a preencher as lacunas entre as partes interessadas do projeto, ou seja, analistas, designers, desenvolvedores, usuários do sistema e proprietários do sistema para ajudá-los a entender quais funcionalidades esta plataforma terá e o que não
 
-- Advanced/Professional Users, such as engineers (Developers) or researchers, who want to use for more demanding graph analysis.
-- Development Consultants – Experienced professionals within the app and web development market. This document can be used to review the components of the platform and possible changes are needed or to provide an overview of the user experience.
-- App Developers – This document will primarily be used to instruct the development team on how the Platform should be built on the mediums.
-- Programmers who are interested in working on the project by further developing it or for maintaining the platform.
-- For Users who want to setup.
+- Usuários avançados/profissionais, como engenheiros (desenvolvedores) ou pesquisadores, que desejam usar para análises gráficas mais exigentes.
+- Consultores de Desenvolvimento – Profissionais experientes no mercado de desenvolvimento de aplicativos e web. Este documento pode ser usado para revisar os componentes da plataforma e possíveis alterações são necessárias ou para fornecer uma visão geral da experiência do usuário.
+- Desenvolvedores de Aplicativos – Este documento será usado principalmente para instruir a equipe de desenvolvimento sobre como a Plataforma deve ser construída nas mídias.
+- Programadores interessados em trabalhar no projeto, desenvolvendo-o ou mantendo a plataforma.
+- Para usuários que desejam configurar.
 
-## Installation guide
+## Guia de instalação
 ---
-How to set up the server
+Como configurar o servidor
 
-**Steps to setup development env**
+**Etapas para configurar o ambiente de desenvolvimento**
 
-- Clone project from github https://github.com/EL-BID/Panel-de-precios-medicamentos
-- Install Rstudio & composer
-- make sure that you have postgresql database installed
-- copy .env.dev to .env and change the DB\_XXX environment variable to your local postgresql server info
-- run command:
+- Clone projeto do github https://github.com/EL-BID/Panel-de-precios-medicamentos
+- Instale o Rstudio e compositor
+- certifique-se de ter o banco de dados postgresql instalado
+- copie .env.dev para .env e altere a variável de ambiente DB\_XXX para as informações do seu servidor postgresql local
+- comando de execução:
 
 ```
 composer.phar install
 ```
 
-- To init database, run command at folders database/migrations and database/seeds:
+- Para iniciar o banco de dados, execute o comando nas pastas database/migrations e database/seeds:
 ```
 migrate:fresh –db.
 ```
-- access the page for toolkit: https://github.com/EL-BID/Panel-de-precios-medicamentos
+- acesse a página do kit de ferramentas: https://github.com/EL-BID/Panel-de-precios-medicamentos
 
+**Etapas para implantação**
 
-**Steps to deployment**
-
-Install the  **R-base package**  using the following code
+Instale o **R-base package** usando o código a seguir
 ```
 sudo apt-get update
 ```
@@ -61,29 +60,29 @@ sudo apt-get update
 sudo apt-get install r-base
 ```
 
-Download and install the  **gdebi**  package using the following commands
+Baixe e instale o pacote **gdebi** usando os seguintes comandos
 
 ```
 sudo apt install gdebi
 ```
 
-Use the following commands to install the .deb package
+Use os seguintes comandos para instalar o pacote .deb
 
 ```
 sudo gdebi /path/to/the/file/.deb
 ```
 
-Updated R studio
+Rstudio atualizado
 
-Updated Sql version
+Atualizar versão do SQL
 
-**Steps to setup development enviroment**
+**Etapas para configurar o ambiente de desenvolvimento**
 
-- install
-- clone project from [b](https://github.com/orite-dev/kepp-v2-web)https://github.com/EL-BID/Panel-de-precios-medicamentos
-- copy .env.development to .env
+- instalar
+- projeto clone de [b](https://github.com/orite-dev/kepp-v2-web)https://github.com/EL-BID/Panel-de-precios-medicamentos
+- copie .env.development para .env
 
-Run the following commands in the project root folder:
+Execute os seguintes comandos na pasta raiz do projeto:
 
 ```
 yarn install
@@ -92,12 +91,12 @@ yarn install
 yarn start
 ```
 
-\*NOTE: the project is based on .R execution resources required.
+\*NOTA: o projeto é baseado nos recursos de execução .R necessários.
 
-**Steps to deploy on system**
+**Etapas para implantar no sistema**
 
-- copy .env.production to .env
-- Run the following commands:
+- copie .env.production para .env
+- Execute os seguintes comandos:
 ```
 yarn install
 ```
@@ -107,60 +106,60 @@ yarn build
 ```
 yarn deploy
 ```
-**Clone and Install**
+**Clone e instale**
 
-Clone the repo:
+Clone o repositório:
 
 https://github.com/EL-BID/Panel-de-precios-medicamentos
 
-Move to the appropriate directory:
+Mova para o diretório apropriado:
 
-Install dependencies:
+Instalar dependências:
 
 ```
 npm install
 ```
 
-## Software Interfaces
+## Interfaces de software
 
 <p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/soft-inter.png" /> </p>
 <p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/package-inter.png" /> </p>
 
-## Hardware Interfaces
+## Interfaces de hardware
 
-| No | Hardware | Description |
+| Não | Ferragens | Descrição |
 | --- | --- | --- |
-| 1 | System | Server Based System |
-| 2 | OS | (All Supported OS) |
-| 3 | Memory | 2 GB (optional) |
-| 4 | RAM | 4.0 GB (optional) |
+| 1 | Sistema | Sistema Baseado em Servidor |
+| 2 | SO | (todos os sistemas operacionais suportados) |
+| 3 | Memória | 2 GB (opcional) |
+| 4 | RAM | 4,0 GB (opcional) |
 
-### Equipment
+### Equipamento
 
-- An Internet connection – Wi-Fi (a/g/n/ac) or wireless (3G or 4G/LTE)
-- For Mobile Permissions for upload.
+- Uma conexão com a Internet – Wi-Fi (a/g/n/ac) ou sem fio (3G ou 4G/LTE)
+- Para permissões móveis para upload.
 
-### Supported operating systems
+### Sistemas operacionais suportados
 
-- Windows, Mac and linux
+- Windows, Mac e Linux
 
-### Processor requirement
+### Requisito do processador
 
-- Any single core processor or better
+- Qualquer processador de núcleo único ou melhor
 
 
-## Author/s
+## Autor(es)
 ---
 Eduardo Yonekura
 
-## Limitation of responsibilities
-Disclaimer: This section is only for IDB-funded tools.
+## Limitação de responsabilidades
+Isenção de responsabilidade: Esta seção é apenas para ferramentas financiadas pelo BID.
 
-The IDB will not be responsible, under any circumstance, for damage or compensation, moral or patrimonial; direct or indirect; accessory or special; or by way of consequence, foreseen or unforeseen, that could arise:
+O BID não será responsável, em hipótese alguma, por danos ou indenizações, morais ou patrimoniais; direto ou indireto; acessório ou especial; ou por consequência, prevista ou imprevista, que possa surgir:
 
-i. Under any theory of liability, whether by contract, infringement of intellectual property rights, negligence or under any other theory; me
+eu. Sob qualquer teoria de responsabilidade, seja por contrato, violação de direitos de propriedade intelectual, negligência ou sob qualquer outra teoria; Eu
 
-ii. As a result of the use of the Digital Tool, including, but not limited to, potential defects in the Digital Tool, or the loss or inaccuracy of data of any kind. The foregoing includes expenses or damages associated with communication failures and / or computer malfunctions, related to the use of the Digital Tool.
+ii. Como resultado do uso da Ferramenta Digital, incluindo, mas não se limitando a, possíveis defeitos na Ferramenta Digital, ou a perda ou imprecisão de dados de qualquer tipo. O anterior inclui despesas ou danos associados a falhas de comunicação e/ou mau funcionamento do computador, relacionadas ao uso da Ferramenta Digital.
 
 
 
