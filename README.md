@@ -1,6 +1,3 @@
-![analytics image (flat)](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)
-![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/panel-de-precios/readme&dt=&tid=UA-4677001-16)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Panel-de-precios-medicamentos&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_Panel-de-precios-medicamentos)
 
 *This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org)*
 
