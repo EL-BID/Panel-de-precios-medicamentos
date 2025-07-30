@@ -2,7 +2,7 @@
 ![analytics](https://www.google-analytics.com/collect?v=1&cid=555&t=pageview&ec=repo&ea=open&dp=/panel-de-precios/readme&dt=&tid=UA-4677001-16)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=EL-BID_Panel-de-precios-medicamentos&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=EL-BID_Panel-de-precios-medicamentos)
 
-*Esta ferramenta digital faz parte do catálogo de ferramentas do **Banco Interamericano de Desenvolvimento**. Você pode saber mais sobre a iniciativa do BID em [code.iadb.org](https://code.iadb.org)*
+*Esta ferramenta digital faz parte do catálogo de ferramentas do **Banco Interamericano de Desenvolvimento**. Você pode saber mais sobre a iniciativa do BID em [https://knowledge.iadb.org/pt-br/codigo-para-o-desenvolvimento](https://knowledge.iadb.org/pt-br/codigo-para-o-desenvolvimento)*
 
 <h1 align = "center"> Painel de preços de medicamentos </h1>
 <p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/panel-de-precios.png" /> </p >
