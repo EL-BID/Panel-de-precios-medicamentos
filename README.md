@@ -1,5 +1,5 @@
 
-*This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [code.iadb.org](https://code.iadb.org)*
+*This digital tool is part of the catalog of tools of the **Inter-American Development Bank**. You can learn more about the IDB initiative at [https://knowledge.iadb.org/pt-br/codigo-para-o-desenvolvimento](https://knowledge.iadb.org/pt-br/codigo-para-o-desenvolvimento)*
 
 <h1 align = "center"> Drug Price Panel </h1>
 <p align = "center"> <img src = "https://raw.githubusercontent.com/EL-BID/Panel-de-precios-medicamentos/main/panel-de-precios.png" /> </p>
